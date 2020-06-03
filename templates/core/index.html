@@ -1,0 +1,15 @@
+[% extends 'base.html' %]
+
+{% block content%}
+
+{% if latest_post_list %}
+
+{% for latest_post in latest_post_list %}
+
+{{ latest_post }}
+
+{% endfor %}
+
+{% endif %}
+
+{% endblock %}
